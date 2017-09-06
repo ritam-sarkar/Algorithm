@@ -20,7 +20,7 @@ public class FindPairOfSum {
 		int a [] = {1,4,5,2,10};
 		int [] b = {14,3,9,5,1};
 		int c[] = {3,4,10,9,4,1};
-		findPair(c,8);
+		findPair(b,8);
 	}
 
 	private static void findPair(int[] a,int sum) {

@@ -18,12 +18,15 @@ public class ContiguousSubArray {
 	public static void main(String[] args) {
 		int a1[] = {14, 12, 11, 20};
 		int a2[] = {1, 56, 58, 57, 90, 92, 94, 93, 91, 45};
+		int a3[] = {2,3,4,12,6,7,8,9,11,10};
 		System.out.println("find max length of contiguous subarray of a1 "+findMaxLength(a1));
 		System.out.println("find max length of contiguous subarray of a2 "+findMaxLength(a2));
+		System.out.println("find max length of contiguous subarray of a3 "+findMaxLength(a3));
 	}
 	
 	private static int findMaxLength(int a[]){
 		int maxLen =0;
+		
 		for(int i=0;i<a.length;i++){
 			int mx = a[i];
 			int mn = a[i];
