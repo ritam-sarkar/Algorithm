@@ -18,7 +18,8 @@ public class AnyNumberToDecimal {
        //System.out.println(conv.toNumber(4,2));
        //System.out.println(conv.toDecimal(100,2));
        System.out.println(conv.toNumber(12,8));
-       System.out.println(conv.toDecimal(14,8));
+       System.out.println(conv.binarytoDecimal(14,8));
+       
 	}
 
 }
@@ -33,7 +34,7 @@ class Convert {
 		}
 		
 	}
-	public int toDecimal(int binary,int radix){
+	public int binarytoDecimal(int binary,int radix){
 		int decimal =0;
 		int p=0;
 		while(binary != 0){

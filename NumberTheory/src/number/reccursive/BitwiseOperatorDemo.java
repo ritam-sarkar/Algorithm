@@ -19,6 +19,8 @@ public class BitwiseOperatorDemo {
 	private static void samesign(){
 		int a = -2;
 		int b =3;
+		int c = 8;
+		System.out.println(~a);
 		boolean sameSign = (a>=0)^(b<=0);
 		System.out.println(a+" "+b+" are of same sign "+sameSign);
 	}

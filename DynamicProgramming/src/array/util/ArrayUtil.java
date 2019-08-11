@@ -13,30 +13,32 @@ public class ArrayUtil {
 	}
 	public static void traverse(int a[]){
 		if(a != null){
+			System.out.println();
 			for(int i=0;i<a.length;i++){
-				System.out.println(a[i]);
+				System.out.print(" "+a[i]);
 			}
 		}
 	}
-	public static int[] removeDuplicates(int [] a){
-        
-		int b[] = new int[a.length];
-		int count =0;
-		int j=0;
-		for(int i=0;i<a.length-1;i++){
-			b[j++]=a[i];
-			if(a[i] == a[i+1]){
-				i++;
-				count++;
-			}			
+	public static void traverse(char a[]){
+		if(a != null){
+			System.out.println();
+			for(int i=0;i<a.length;i++){
+				System.out.print(a[i]+" ");
+			}
 		}
-		a = new int[b.length-count];
-		int i=0;
-		while(b[i] != 0){
-			a[i]=b[i];
-			i++;
+	}
+	public static void removeDuplicates(int [] a){
+        int n = a.length;
+		int b[] = new int[n];
+		int j =0;
+		for(int i=0;i<n;i++) {
+			if(i+1 == n) {
+				b[j++] = a[i];
+			}else if(a[i+1]-a[i] != 0) {
+				b[j++] = a[i];
+			}
 		}
-		return a;
+		a=b;
 		
 	}
 	public static void traverseList(LinkedList<LinkedList<Integer>> list){

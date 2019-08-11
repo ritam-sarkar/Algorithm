@@ -20,7 +20,7 @@ public class SuperDigit {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-       System.out.println(superDigit(124,3));
+       System.out.println(superDigit(2,1));
       
 		
 	}

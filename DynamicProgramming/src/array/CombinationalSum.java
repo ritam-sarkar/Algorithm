@@ -22,7 +22,7 @@ public class CombinationalSum {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-      int [] a = {8,2,6,8,4,6};
+      int [] a = {8,2,6,4,6,8};
       Arrays.sort(a); 
       ArrayUtil.removeDuplicates(a);
       LinkedList<Integer> stack = new LinkedList();

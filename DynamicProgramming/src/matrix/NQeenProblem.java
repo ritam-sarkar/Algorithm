@@ -17,7 +17,7 @@ public class NQeenProblem {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
       
-		if(!findNQueenMatrix(4)){
+		if(!findNQueenMatrix(5)){
 			System.out.println(" solution does not exist");
 		}
 		
