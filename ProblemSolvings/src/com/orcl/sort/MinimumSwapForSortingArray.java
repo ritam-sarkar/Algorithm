@@ -15,9 +15,9 @@ public class MinimumSwapForSortingArray {
 		int arr3[] = {1,3,5,2,4,6,7};
 		int arr4[] = {4,2,3,1};
 		System.out.println(calculateMinimumSwap(arr1));
-		System.out.println(calculateMinimumSwap(arr2));
+		/*System.out.println(calculateMinimumSwap(arr2));
 		System.out.println(calculateMinimumSwap(arr3));
-		System.out.println(calculateMinimumSwap(arr4));
+		System.out.println(calculateMinimumSwap(arr4));*/
 	}
 	static int calculateMinimumSwap(int[] arr) {
 		int swap = 0;
@@ -30,11 +30,12 @@ public class MinimumSwapForSortingArray {
 		}
 		Collections.sort(pairs, new PairComparator());
 		for(int i=0;i<n;i++) {
-			if(pairs.get(i).getPos() != i) {				
-				int toIndex = pairs.get(pairs.get(i).getPos()).getPos();
-				if(visited.get(toIndex) == null || !visited.get(toIndex)) {
+			int j = pairs.get(i).getPos();
+			if(j != i) {				
+				int toIndex = pairs.get(j).getPos();
+				if(!visited.getOrDefault(toIndex, false)) {
 					swap++;
-					visited.put(pairs.get(i).getPos(), true);
+					visited.put(j, true);
 				}				
 			}
 		}

@@ -1,7 +1,8 @@
 package com.orcl.search;
 /**
  * 
- * Given an array of numbers find the inflection point (index) where the part of the array to the left & to the right of the inflection point (index) have EQUAL sum. If there is no inflection point, you can return -1. What is the time complexity & space complexity of your algorithm ? Is this the optimal solution?
+ * Given an array of numbers find the inflection point (index) where the part of the array to the left & to the right of the inflection point (index) have EQUAL sum. If there is no inflection point, you can return -1. 
+ * What is the time complexity & space complexity of your algorithm ? Is this the optimal solution?
 
 Example-1: A = [1, 2, 3, 4, 5, 5, 2, 4, 4].
 
@@ -29,7 +30,7 @@ public class InflectionPointDemo {
 		int arr4[] = {-2,1,-1};
 		int arr5[] = {-4, 3, 2, 14};
 		int arr6[] = {2,2,3,3,3,2,2};
-		System.out.println(findInflectionIndex(arr));
+		System.out.println(findInflectionIndex(arr2));
 		
 	}
 	private static int findInflectionIndex(int arr[]) {

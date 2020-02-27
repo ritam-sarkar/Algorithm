@@ -10,7 +10,7 @@ public class TriplteSum {
 
 	public static void main(String[] args) {
 
-		int[] arr = {7,12,-1,-3,-4};
+		int[] arr = {7,12,-1,-3,-4,4};
 		Arrays.sort(arr);
 		int n = arr.length;
 		int x = 0;

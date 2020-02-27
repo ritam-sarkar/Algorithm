@@ -19,22 +19,30 @@ public class SumOfSubSquareMatrix {
 		MatrixUtil.parse(mat);
 		int k = 3;
 		int n = mat.length;
-		int[][] sumMatrix = new int[k][k];
-		int i=0;
-		int j =0;
-		int p=0;
-		int q =0;
-		for(i=0;i <= n-k;i++) {
-			for(j=0;j <= n-k;j++) {
-				sumMatrix[p][q] = sumMatrix[p][q] + mat[i][j];				
-			}
-			if(p == k-1) {
-				p=0;
-			}
-			p++;
-		}
-		System.out.println();
+		int[][] sumMatrix = new int[n-k+1][n-k+1];
+		solve(sumMatrix, 0, 0, 0, 0, mat, k);
 		MatrixUtil.parse(sumMatrix);
+	}
+
+	private static void solve(int[][] sumMatrix, int i, int j, int k, int l, int[][] mat, int limit) {
+
+		int r = mat.length;
+		int c = mat[0].length;
+		if(i <= r-limit && j <= c-limit) {
+			sumMatrix[k][l] = summation(mat, i, j, limit);
+			solve(sumMatrix, i+1, j, k+1, l, mat, limit);
+			solve(sumMatrix, i, j+1, k, l+1, mat, limit);
+		}
+	}
+
+	private static int summation(int[][] mat, int r, int c, int limit) {
+		int sum =0;
+		for(int i =r; i<r+limit; i++) {
+			for(int j =c; j<c+limit; j++) {
+				sum += mat[i][j];
+			}
+		}
+		return sum;
 	}
 
 }

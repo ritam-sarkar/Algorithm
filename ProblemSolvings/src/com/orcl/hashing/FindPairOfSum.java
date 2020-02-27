@@ -43,9 +43,7 @@ public class FindPairOfSum {
     		  complementMap.put(complement, i);
     	  }
       }
-      while(true) {
-    	  
-      }
+      
 		
 	}
 

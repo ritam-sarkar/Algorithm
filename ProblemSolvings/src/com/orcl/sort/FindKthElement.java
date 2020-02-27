@@ -18,37 +18,44 @@ First line consists of test cases T. First line of every test case
 public class FindKthElement {
 
 	public static void main(String[] args) {
-     int[] arr = {10,1,7,2,25,11,14};
-     int k =4;
-     int n = arr.length;
-     int start = 0;
-     int end = n-1;
-     int partIndex = findPartionIndex(arr, start, end);
-     while(partIndex != k-1) {
-    	 if(partIndex > k-1) {
-    		 partIndex = findPartionIndex(arr, start, partIndex-1);
-    	 }else if(partIndex < k-1) {
-    		 partIndex = findPartionIndex(arr, partIndex+1, end);
-    	 }
-     }
-     System.out.println(arr[partIndex]);     
+     int[] arr1 = {2,3,6,7,9};
+     int k =5;
+     int arr2[] = {1,4,8,10};
+     int m = arr1.length;
+     int n = arr2.length;    
+     System.out.println(findKthElement(arr1, arr2, m, n, k));   
+     
+     
 	}
-	private static int findPartionIndex(int arr[], int start, int end){
-		int pivot = arr[start];
-		int partIndex = end;
-		for(int i=end;i>start;i--) {
-			if(arr[i]>=pivot) {
-				int temp = arr[i];
-				arr[i] = arr[partIndex];
-				arr[partIndex] = temp;
-				partIndex--;
-			}
-		}
-		int temp = arr[start];
-		arr[start] = arr[partIndex];
-		arr[partIndex] = temp;
-		return partIndex;
+	private static int findKthElement(int[] arr1, int[] arr2, int m, int n, int k) {
+		 int i=0;
+	     int j =0;
+	     int result = -1;
+		 while(i<m && j <n && k >0) {
+	    	 if(arr1[i] < arr2[j]) {
+	    		 result = arr1[i];
+	    		 i++;
+	    		 k--;
+	    	 } else {
+	    		 result = arr2[j];
+	    		 j++;
+	    		 k--;
+	    	 }
+	     }
+	     while(k > 0 && i<m) {
+    		 result = arr1[i];
+	    	 i++;
+			 k--; 
+	     }
+	     while(k > 0 && j<n) {
+    		 result = arr2[j];
+	    	 j++;
+			 k--; 
+	     }
+		return result;
 	}
+	
+	
 
 }
 

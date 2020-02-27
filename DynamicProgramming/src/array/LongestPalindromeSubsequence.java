@@ -1,4 +1,4 @@
-package array;
+ 	package array;
 
 import array.util.ArrayUtil;
 import matrix.util.MatrixUtil;
@@ -50,10 +50,7 @@ public class LongestPalindromeSubsequence {
 			}
 		}		
 	}
-
-	private static void findAnswer(int[][] mat, int i, int j, int start, int end,int[] answer) {
-	}
-
+	
 	private static int[][] findSolution(String s) {
 		int n = s.length();
 		int mat[][] = new int[n][n];
@@ -72,7 +69,7 @@ public class LongestPalindromeSubsequence {
 		 * 0,3  1,4 ...
 		 *   
 		 */
-		for(int d=1;d <= n-1;d++) {
+		for(int d=1;d < n;d++) {
 			for(int i=0;i < n-d;i++) {
 				int j = i+d;
 				if(arr[i] == arr[j]) {

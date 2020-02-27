@@ -5,9 +5,9 @@ public class TripletDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-      int arr1[] = {5,1,3,4,7};
-      System.out.println(" no of subarrays for counttriplet1 "+countTriplet1(arr1, 12));
-     // System.out.println(" no of subarrays for counttriplet2 "+countTriplet2(arr1, 12));
+      int arr1[] = {5,1,3,4,7,6};
+      System.out.println(" no of subarrays for counttriplet  "+countTriplet1(arr1, 12));
+      System.out.println(" no of subarrays for counttriplet2 "+countTriplet2(arr1, 12));
       
 	}
 	/**
@@ -31,6 +31,7 @@ public class TripletDemo {
 			   }else{
 				   ans += (k-j);
 				   j++;
+				   break;
 			   }
 		   }   
 		   

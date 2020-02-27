@@ -16,7 +16,6 @@ public class OpenTextQuestion {
 		for(int i=0;i<n;i++) {
 			if(arr[i] == x) {
 				count++;
-				//arr[i] = Character.forDigit(count, 10);
 				arr[i] = (char)(count+'0');
 			}
 		}

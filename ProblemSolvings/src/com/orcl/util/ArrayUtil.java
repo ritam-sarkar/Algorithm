@@ -10,7 +10,7 @@ public class ArrayUtil {
 	public static void traverse(int a[]){
 		if(a != null){
 			for(int i=0;i<a.length;i++){
-				System.out.println(a[i]);
+				System.out.print(a[i]+" ");
 			}
 		}
 	}

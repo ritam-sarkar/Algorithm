@@ -12,53 +12,32 @@ package tree;
 Number and is denoted by Cn. For example, there are 2 BSTs with 2 nodes (2 choices for the
 root) and 5 BSTs with 3 nodes.
 
-Read
-https://www.geeksforgeeks.org/total-number-of-possible-binary-search-trees-with-n-keys/
-catalan(BST) = 2nCn/n+1
-catalan(BT) = (2nCn)*factorial(n)
+Cn = summation(i=1 to n) [C(i-1) + C(n-i)]
+C0 = C1 =1
  *
  */
 public class CatalanNumberOfBST {
 
+	static int[] catalan = new int[1024];
+	
+	
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
-		int n = 5;
-		System.out.println(fact(n));
-		System.out.println("catalan of bst "+catalanBST(n));
+		int n = 3;
+		catalan[0] = 1;
 		System.out.println(" Catalan of Binary tree "+catalanBT(n));
 	}
-	static int fact(int n) {
-		int fact[] = new int[n+1];
-		fact[0]=1;
-		for(int i=1;i<=n;i++) {
-			fact[i] = i*fact[i-1];
-		}
-		return fact[n];
-	}
-	static int combination(int n, int r) {
-		if(n==r || r==0) {
-			return 1;
-		}else if((n ==r-1) || (r ==1)){
-			return n;
-		}else {
-			int result =n;
-			for(int i=1;i<=(r-1);i++) {
-				result *= (n-i);
-			}
-			return result/fact(r);
-		}
-	}
-	static int catalanBST(int n) {
-		return combination(2*n,n)/(n+1);
-	}
+	
 	static int catalanBT(int n) {
-		return combination(2*n,n)*fact(n);
-	}
-
-	
-	
+		if(catalan[n] != 0) {
+			return catalan[n];
+		}
+		for(int i=1; i<=n;i++) {
+			catalan[n] += catalanBT(i-1) * catalanBT(n-i);
+		}
+		return catalan[n];		
+	}	
 
 }
