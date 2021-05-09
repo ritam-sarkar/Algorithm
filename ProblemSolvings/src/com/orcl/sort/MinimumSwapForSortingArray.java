@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.orcl.util.ArrayUtil;
+
 public class MinimumSwapForSortingArray {
 
 	public static void main(String[] args) {
@@ -14,64 +16,32 @@ public class MinimumSwapForSortingArray {
 		int arr2[] = {4,3,1,2};
 		int arr3[] = {1,3,5,2,4,6,7};
 		int arr4[] = {4,2,3,1};
-		System.out.println(calculateMinimumSwap(arr1));
-		/*System.out.println(calculateMinimumSwap(arr2));
-		System.out.println(calculateMinimumSwap(arr3));
-		System.out.println(calculateMinimumSwap(arr4));*/
+		//System.out.println(minimumSwap2(arr1));
+		//System.out.println(minimumSwap2(arr2));
+		System.out.println(minimumSwap2(arr3));
+		//System.out.println(minimumSwap2(arr4));
 	}
-	static int calculateMinimumSwap(int[] arr) {
-		int swap = 0;
-		int n = arr.length;
-		Map<Integer,Boolean> visited = new HashMap<Integer,Boolean>();
-		int k =0;
-		List<Pair> pairs = new ArrayList<Pair>();
-		for(int i =0;i<n;i++) {
-			pairs.add(new Pair(arr[i], i));
-		}
-		Collections.sort(pairs, new PairComparator());
-		for(int i=0;i<n;i++) {
-			int j = pairs.get(i).getPos();
-			if(j != i) {				
-				int toIndex = pairs.get(j).getPos();
-				if(!visited.getOrDefault(toIndex, false)) {
-					swap++;
-					visited.put(j, true);
-				}				
-			}
-		}
-		return swap;
-	}
-	static class Pair{
-		private int key;
-		private int pos;
-		public Pair(int key, int pos) {
-			super();
-			this.key = key;
-			this.pos = pos;
-		}
-		public int getKey() {
-			return key;
-		}
-		public void setKey(int key) {
-			this.key = key;
-		}
-		public int getPos() {
-			return pos;
-		}
-		public void setPos(int pos) {
-			this.pos = pos;
-		}
-		
-	}
-	static class PairComparator implements Comparator<Pair>{
 
-		@Override
-		public int compare(Pair o1, Pair o2) {
-			Pair p1 = (Pair)o1;
-			Pair p2 = (Pair)o2;
-			return p1.key - p2.key;
+	static int minimumSwap2(int arr[]){
+    int swap =0;
+    int n = arr.length;
+    for(int i=0; i<n;i++){
+    	if(i+1 != arr[i]){
+    		int indexToSwap = find(arr, i+1, i+1);
+			ArrayUtil.swap(arr,i,indexToSwap);
+			swap++;
 		}
-		
+	 }
+    return swap;
+	}
+	static int find(int arr[], int key, int start){
+    int n = arr.length;
+    for(int i=start;i<n;i++){
+    	if(arr[i] == key){
+    		return i;
+		}
+	 }
+    return -1;
 	}
 
 }

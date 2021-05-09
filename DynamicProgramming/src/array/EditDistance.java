@@ -1,3 +1,5 @@
+package array;
+
 /**
  * Input:   str1 = "geek", str2 = "gesek"
  * Output:  1
