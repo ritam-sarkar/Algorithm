@@ -8,41 +8,26 @@ public class BalancedBraces {
 		String s1 = "{[(])}";
 		String s2 = "{[()]}";
 		String s3 = "{{[[(())]]}}";
-		System.out.println(isBalanced(s1, new Stack<Character>()));
-		System.out.println(isBalanced(s2, new Stack<Character>()));
-		System.out.println(isBalanced(s3, new Stack<Character>()));
-		
-		
+		System.out.println(s1 + isValid(s1));
+		System.out.println(s2 + isValid(s2));
+		System.out.println(s3 + isValid(s3));
+
 	}
 
-	private static String isBalanced(String s, Stack<Character> stack) {
-		char[] charArr = s.toCharArray();
-		for(char c : charArr) {
-			if(stack.isEmpty())
-				stack.push(c);
-			else {
-				if(isComplement(stack.peek(), c)) {
-					stack.pop();
-				}else {
-					stack.push(c);
-				}
-			}
+	private static boolean isValid(String s) {
+		// It is not parsing the entire string wherever it breaks it returns false
+		Stack<Character> stack = new Stack<Character>();
+		for (char c : s.toCharArray()) {
+			if (c == '(')
+				stack.push(')');
+			else if (c == '{')
+				stack.push('}');
+			else if (c == '[')
+				stack.push(']');
+			else if (stack.isEmpty() || stack.pop() != c)
+				return false;
 		}
-		if(stack.isEmpty()) {
-			return "YES";
-		}
-		return "NO";
-	}
-	static boolean  isComplement(char c1, char c2){
-		if(c1 == '{' && c2 == '}')
-			return true;
-		if(c1 == '(' && c2 == ')')
-			return true;
-		if(c1 == '[' && c2 == ']')
-			return true;
-		else
-			return false;
-		
+		return stack.isEmpty();
 	}
 
 }
