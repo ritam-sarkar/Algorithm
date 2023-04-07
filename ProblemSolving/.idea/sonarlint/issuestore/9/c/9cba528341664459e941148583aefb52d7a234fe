@@ -1,0 +1,16 @@
+
+o
+java:S2293&"YReplace the type specification in this constructor call with the diamond operator ("<>").(×…›ˆ
+D
+java:S10663"/Merge this if statement with the enclosing one.(€¬ìn
+@
+java:S1197 "*Move the array designators [] to the type.(Â‰¬Þ
+N	java:S106""9Replace this use of System.out or System.err by a logger.(áºÜå
+m
+java:S6204-"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(á„êÉùÿÿÿÿ
+G
+java:S1128"1Remove this unused import 'java.util.Comparator'.(î¹ó¹
+K
+java:S1128"0Remove this unused import 'java.util.Map.Entry'.(±þê¾úÿÿÿÿ
+E
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤þÿÿÿÿ

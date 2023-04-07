@@ -22,6 +22,8 @@ public class AzugaProblem {
 		products.add(p2);
 		discounts.add(d1);
 		discounts.add(d2);
+		System.out.println(products);
+		System.out.println(discounts);
 		System.out.println(getMinimumAmount(products, discounts));
 		
 		

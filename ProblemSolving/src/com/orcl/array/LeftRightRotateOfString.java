@@ -14,7 +14,7 @@ public class LeftRightRotateOfString {
 		if(d > n) {
 			d = d %n;
 		}
-		return str.substring(d, str.length()) + str.substring(0,d);
+		return str.substring(d) + str.substring(0,d);
 	}
 	static String rightRotate(String str, int d) {
 		
