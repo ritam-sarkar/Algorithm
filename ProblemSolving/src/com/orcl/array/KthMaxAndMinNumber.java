@@ -2,23 +2,30 @@ package com.orcl.array;
 
 import com.orcl.util.ArrayUtil;
 
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
  * Find kth smallest from an unsorted array
  */
-public class KthSmallestNumber {
+public class KthMaxAndMinNumber {
     public static void main(String[] args) {
         int arr[] = {12, 29, 13, 31, 32, 22, 23};
-        int k =4;
-        System.out.println(findUsingMaxHeap(arr,k));
-        System.out.println(quickSelect(arr,k));
+        int k =3;
+        // Find smallest
+        System.out.println(k+" th smallest number ");
+        System.out.println(findUsingHeap(arr,k, (a, b) -> b - a));
+        System.out.println(quickSelect(arr,0, arr.length-1,k-1));
+        // find largest
+        System.out.println(k+" th max number");
+        System.out.println(findUsingHeap(arr,k, (a, b) -> a - b));
+        System.out.println(quickSelect(arr,0, arr.length-1,k+1));
 
     }
 
-    private static int findUsingMaxHeap(int[] arr, int k) {
+    private static int findUsingHeap(int[] arr, int k, Comparator<Integer> comparator) {
 
-        PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b - a);
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(comparator);
 
         for (int i = 0; i < arr.length; i++) {
             maxHeap.offer(arr[i]);
@@ -27,9 +34,6 @@ public class KthSmallestNumber {
             }
         }
         return maxHeap.peek();
-    }
-    public static int quickSelect(int[] arr, int k) {
-        return quickSelect(arr, 0, arr.length - 1, k - 1);
     }
 
     private static int quickSelect(int[] arr, int left, int right, int k) {
