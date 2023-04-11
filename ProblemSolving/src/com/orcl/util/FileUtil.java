@@ -19,8 +19,10 @@ import java.net.URL;
 public class FileUtil {
 
 	/**
-	 * @param args
-	 * @throws IOException 
+	 *
+	 * @param filename
+	 * @return
+	 * @throws IOException
 	 */
 	public static String[] readLineByLine(String filename) throws IOException{
 		

@@ -7,6 +7,7 @@ public class ContainerWithMostWater {
     public static void main(String[] args) {
 
         System.out.println(maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7}));
+        System.out.println(maxArea(new int[]{2,2,6,7,1,4,5,8,3}));
         //System.out.println(maxArea(new int[]{1,1}));
     }
     private static int maxArea(int[] height) {

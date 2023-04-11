@@ -1,4 +1,4 @@
-package com.orcl.array;
+package com.orcl.miscelineous;
 /**
  * 
  */

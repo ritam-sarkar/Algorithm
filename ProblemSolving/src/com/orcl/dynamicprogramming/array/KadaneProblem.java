@@ -31,17 +31,17 @@ public class KadaneProblem {
 	private static int findMaxSumWithoutDP(int[] arr) {
 		int max = Integer.MIN_VALUE;
 		int start = 0, end =0, currentIndex = 0;
-		int currentMax = 0;
+		int currentSum = 0;
 		for (int i=0;i<arr.length;i++){
-			currentMax = currentMax + arr[i];
-			if(max < currentMax){
-				max = currentMax;
+			currentSum = currentSum + arr[i];
+			if(max < currentSum){
+				max = currentSum;
 				start = currentIndex;
 				end =i;
 			}
-			if(currentMax < 0){
-				currentMax = 0;
-				currentIndex = currentMax+1;
+			if(currentSum < 0){
+				currentSum = 0;
+				currentIndex = currentSum+1;
 			}
 		}
 		System.out.print("Start index "+start+" and end index "+end);

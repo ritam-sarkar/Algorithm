@@ -1,5 +1,7 @@
 package com.orcl.array;
 
+import com.orcl.util.ArrayUtil;
+
 import java.util.PriorityQueue;
 
 /**
@@ -9,12 +11,12 @@ public class KthSmallestNumber {
     public static void main(String[] args) {
         int arr[] = {12, 29, 13, 31, 32, 22, 23};
         int k =4;
-        System.out.println(findUsingMinHeap(arr,k));
+        System.out.println(findUsingMaxHeap(arr,k));
         System.out.println(quickSelect(arr,k));
 
     }
 
-    private static int findUsingMinHeap(int[] arr, int k) {
+    private static int findUsingMaxHeap(int[] arr, int k) {
 
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b - a);
 
@@ -49,17 +51,11 @@ public class KthSmallestNumber {
        int pIndex = left;
        for (int i=left; i<=right;i++){
            if(arr[i] < pivot){
-               swap(arr, pIndex, i);
+               ArrayUtil.swap(arr, pIndex, i);
                pIndex++;
            }
        }
-       swap(arr, pIndex, right);
+       ArrayUtil.swap(arr, pIndex, right);
        return pIndex;
-    }
-
-    private static void swap(int[] arr, int i, int j) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
     }
 }

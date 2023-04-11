@@ -1,11 +1,12 @@
 package com.orcl.dynamicprogramming.array;
 
+import com.orcl.util.ArrayUtil;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import array.util.ArrayUtil;
 
 /**
  * A DNA sequence can be represented as a string consisting of the letters A, C, G and T, which correspond to the types of successive nucleotides in the sequence.

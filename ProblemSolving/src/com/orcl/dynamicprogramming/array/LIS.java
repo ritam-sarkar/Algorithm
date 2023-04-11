@@ -1,8 +1,9 @@
 package com.orcl.dynamicprogramming.array;
 
+import com.orcl.util.ArrayUtil;
+
 import java.util.Arrays;
 
-import array.util.ArrayUtil;
 
 public class LIS {
 
@@ -46,7 +47,7 @@ public class LIS {
         	result[k--] = A[index];
         	index = lis[index];
         }
-    	ArrayUtil.traverse(result);    	
+    	ArrayUtil.traverse(result);
     } 
     private static int findFloorIndex(int arr[], int l, int len, int k) {
     	int r = len-1;

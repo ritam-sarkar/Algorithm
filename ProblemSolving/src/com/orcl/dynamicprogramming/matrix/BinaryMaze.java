@@ -3,7 +3,8 @@
  */
 package com.orcl.dynamicprogramming.matrix;
 
-import matrix.util.MatrixUtil;
+
+import com.orcl.util.MatrixUtil;
 
 /**
  * @author Ritam
@@ -22,9 +23,9 @@ public class BinaryMaze {
               {0, 1, 1, 1, 1, 1}};
        Point p1 = new Point(0, 0);
        Point p2 = new Point(0, 4);
-       MatrixUtil.parse(a);
+		MatrixUtil.parseIntMatrix(a);
        System.out.println(" shortest path ");
-       MatrixUtil.parse(findMinPath(a, p1, p2));
+       MatrixUtil.parseIntMatrix(findMinPath(a, p1, p2));
        
        
 	}

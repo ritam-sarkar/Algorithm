@@ -1,15 +1,16 @@
  	package com.orcl.dynamicprogramming.array;
 
-import array.util.ArrayUtil;
-import matrix.util.MatrixUtil;
 
-public class LongestPalindromeSubsequence {
+	import com.orcl.util.ArrayUtil;
+	import com.orcl.util.MatrixUtil;
+
+	public class LongestPalindromeSubsequence {
 
 	public static void main(String[] args) {
 
 		String s = "abcdcbesa";
 		int[][] mat = findSolution(s);
-		MatrixUtil.parse(mat);		
+		MatrixUtil.parseIntMatrix(mat);
 		findAnswer(mat,s);
 	}
 

@@ -3,6 +3,7 @@ package com.orcl.array;
 /**
  * Given an array Arr[] that contains N integers (may be positive, negative or zero).
  * Find the product of the maximum product subarray.
+ * Looks like Kadan's algorithm but with little change
  * Example 1:
  * Input:
  * N = 5
@@ -30,9 +31,10 @@ public class MaxProductSubArray {
     }
 
     private static long maxProduct(int[] arr, int n) {
-        long currentMax = 1;
-        long max = Integer.MIN_VALUE;
+        
         // forward parse
+        long max = Integer.MIN_VALUE;
+        long currentMax = 1;
         for (int i = 0; i < n; i++) {
             currentMax *= arr[i];
             max = Math.max(currentMax, max);

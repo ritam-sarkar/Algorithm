@@ -12,6 +12,10 @@ package com.orcl.pattern;
  *
  */
 // Values are (row) C (column), row and column starts with 1
+
+/**
+ *
+ */
 public class PascalTriangle {
 
 	

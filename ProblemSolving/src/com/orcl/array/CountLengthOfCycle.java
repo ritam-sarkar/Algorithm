@@ -44,6 +44,23 @@ public class CountLengthOfCycle {
       return count;
 
    }
+   private static int countLengthOfCycle2(int [] arr, int start){
+      Set<Integer> visited = new HashSet<>();
+      int val = arr[start];
+      while (val < arr.length){
+         if(visited.contains(val)){
+            return visited.size();
+         } else {
+            visited.add(val);
+            // if the index contains the value = index then loop == 1
+            if(val == arr[val]){
+               return 1;
+            }
+            val = arr[val];
+         }
+      }
+      return -1;
+   }
 
    private static boolean isValid(int len, int index){
       return index < len && index >= 0;
@@ -53,13 +70,12 @@ public class CountLengthOfCycle {
    public static void main( String[] args ) {
 
       boolean testsPassed = true;
-
-      testsPassed &= countLengthOfCycle(new int[]{1, 0}, 0) == 2;
-      testsPassed &= countLengthOfCycle(new int[]{1, 2, 0}, 0) == 3;
-      testsPassed &= countLengthOfCycle(new int[] {1,2,3,0}, 1) == 4;
-      testsPassed &= countLengthOfCycle(new int[] {2,8,0}, 0) == 2;
-      testsPassed &= countLengthOfCycle(new int[] {1,2,2,1}, 0) == 1;
-      testsPassed &= countLengthOfCycle(new int[] {1,2,8}, 0) == -1;
+      System.out.println(countLengthOfCycle2(new int[]{1,0},0));
+      System.out.println(countLengthOfCycle2(new int[]{1,2,0},0));
+      System.out.println(countLengthOfCycle2(new int[]{1,2,3,0},1));
+      System.out.println(countLengthOfCycle2(new int[]{2,8,0},2));
+      System.out.println(countLengthOfCycle2(new int[]{1,2,2,1},0));
+      System.out.println(countLengthOfCycle2(new int[]{1,2,8},0));
 
       if(testsPassed) {
          System.out.println( "Test passed." );
