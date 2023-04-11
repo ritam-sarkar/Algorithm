@@ -9,6 +9,11 @@ public class ArrayUtil {
 		a[pos1] = a[pos2];
 		a[pos2] =temp;
 	}
+	public static void swap(char[] a, int pos1,int pos2){
+		char temp = a[pos1];
+		a[pos1] = a[pos2];
+		a[pos2] =temp;
+	}
 	public static void traverse(int a[]){
 		if(a != null){
 			System.out.println();
