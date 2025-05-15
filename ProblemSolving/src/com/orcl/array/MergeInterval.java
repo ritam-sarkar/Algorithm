@@ -1,12 +1,14 @@
 package com.orcl.array;
 
 import java.util.*;
-
+/*
+https://leetcode.com/problems/merge-intervals/description/?envType=study-plan-v2&envId=top-interview-150
+ */
 public class MergeInterval {
     public static void main(String[] args) {
         int[][] arr = {{2,3},{2,2},{3,3},{1,3},{5,7},{2,2},{4,6}};
-        merge(arr);
-        System.out.println(arr);
+
+        System.out.println(merge(arr));
     }
     static int[][] merge(int[][] intervals) {
         // Step 1: sort by start time

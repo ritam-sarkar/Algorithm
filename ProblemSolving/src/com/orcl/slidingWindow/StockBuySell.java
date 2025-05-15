@@ -24,22 +24,20 @@ public class StockBuySell {
         int arr4[] = {12, 13, 15, 7, 11};
         System.out.println(maxProfit(arr4));
 
+        int arr5[] = {1,4,2};
+        System.out.println(maxProfit(arr5));
+
     }
 
     private static int maxProfit(int[] arr) {
-        int min = Integer.MAX_VALUE;
-        int profit = 0;
-        int currentProfit = 0;
+        int min_price = arr[0];
+        int maxprof = 0;
 
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i] < min){
-                min = arr[i];
-            }
-            currentProfit = arr[i] - min;
-            if(profit < currentProfit){
-                profit = currentProfit;
-            }
+        for(int i=1;i<arr.length;i++){
+            maxprof = Math.max(maxprof,arr[i]-min_price);
+            min_price = Math.min(arr[i],min_price);
         }
-        return profit;
+
+        return maxprof;
     }
 }
