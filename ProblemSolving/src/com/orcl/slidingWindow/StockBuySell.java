@@ -12,19 +12,19 @@ package com.orcl.slidingWindow;
 public class StockBuySell {
 
     public static void main(String[] args) {
-        int arr1[] = {7,1,5,3,6,4};
+        int[] arr1 = {7,1,5,3,6,4};
         System.out.println(maxProfit(arr1));
 
-        int arr2[] = {2,1};
+        int[] arr2 = {2,1};
         System.out.println(maxProfit(arr2));
 
-        int arr3[] = {1};
+        int[] arr3 = {1};
         System.out.println(maxProfit(arr3));
 
-        int arr4[] = {12, 13, 15, 7, 11};
+        int[] arr4 = {12, 13, 15, 7, 11};
         System.out.println(maxProfit(arr4));
 
-        int arr5[] = {1,4,2};
+        int[] arr5 = {1,4,2};
         System.out.println(maxProfit(arr5));
 
     }
@@ -40,4 +40,13 @@ public class StockBuySell {
 
         return maxprof;
     }
+    /*private static int maxProfit(int[] arr) {
+      int min = arr[0];
+      int profit = 0;
+      for (int i=1;i<arr.length;i++){
+          min = Math.min(arr[i],min);
+          profit = Math.max(profit,arr[i]-min);
+      }
+      return profit;
+    }*/
 }

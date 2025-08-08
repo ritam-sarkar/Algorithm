@@ -44,7 +44,7 @@ public class EditDistance {
     }
 
     private static int min(int a, int b, int c) {
-        return a < b ? (a <c ? a :c) : (b<c ? b:c);
+        return a < b ? (Math.min(a, c)) : (Math.min(b, c));
     }
 
 

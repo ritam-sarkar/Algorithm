@@ -10,6 +10,7 @@ public class LongestSubStringWithRepeatativeCharacter {
         System.out.println(lengthOfLongestSubstring("abc"));
         System.out.println(lengthOfLongestSubstring("aab"));
         System.out.println(lengthOfLongestSubstring("abba"));
+        System.out.println(lengthOfLongestSubstring("abbbccda"));
     }
     private static int lengthOfLongestSubstring(String s) {
         int result = 0;

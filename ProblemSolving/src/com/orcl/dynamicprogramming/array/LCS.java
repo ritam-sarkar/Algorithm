@@ -39,7 +39,7 @@ public class LCS {
 					lcs[i][j] = 1+lcs[i-1][j-1];
 				}else {
 					// if not eual then take maximum of previous item in the same row and previous item in same column
-					lcs[i][j] = max(lcs[i-1][j],lcs[i][j-1]);	
+					lcs[i][j] = Math.max(lcs[i-1][j],lcs[i][j-1]);
 				}
 			}
 		}		
@@ -50,7 +50,7 @@ public class LCS {
 		int k = lcs[m][n];
 		while(i>0 && j>0 && k>0) {
 			if(lcs[i][j] == lcs[i][j-1]) {
-				// if equals to previous elelemnt of the column then move upwards
+				// if equals to previous element of the column then move upwards
 				j--;
 			}else if(lcs[i][j] == lcs[i-1][j]) {
 				// if equals to previous element in the same row move left side
@@ -69,8 +69,6 @@ public class LCS {
 		
 		
 	}
-	static int max(int a, int b) {
-		return a>b?a:b;
-	}
+
 
 }

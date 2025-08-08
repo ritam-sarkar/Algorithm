@@ -19,25 +19,26 @@ public class BoyarMoyeVoting {
      * @return
      */
     private static int findMajority(int[] nums) {
-        int candidate = 0;
-        int count = 0;
+        int sum =0;
+        int cand = 0;
         for(int num : nums){
-            if(count == 0){
-                candidate = num;
-            }
-            if (candidate == num) {
-                count++;
+            if(sum == 0){
+                cand = num;
+                sum = 1;
+            } else if(cand == num){
+                sum++;
             } else {
-                count--;
+                sum--;
             }
         }
+
         // check if the array is valid
         int freq =0;
         for (int num : nums){
-            if(num == candidate){
+            if(num == cand){
                 freq++;
             }
         }
-        return freq > nums.length / 2 ? candidate : -1;
+        return freq > nums.length / 2 ? cand : -1;
     }
 }

@@ -10,16 +10,17 @@ import java.util.PriorityQueue;
  */
 public class KthMaxAndMinNumber {
     public static void main(String[] args) {
-        int arr[] = {12, 29, 13, 31, 32, 22, 23};
-        int k =3;
+        int arr[] = {3,2,1,5,6,4};
+        int k =2;
+        int n = arr.length;
         // Find smallest
         System.out.println(k+" th smallest number ");
         System.out.println(findUsingHeap(arr,k, (a, b) -> b - a));
-        System.out.println(quickSelect(arr,0, arr.length-1,k-1));
+        System.out.println(quickSelect(arr,0, n-1,k-1));
         // find largest
         System.out.println(k+" th max number");
-        System.out.println(findUsingHeap(arr,k, (a, b) -> a - b));
-        System.out.println(quickSelect(arr,0, arr.length-1,k+1));
+        System.out.println(findUsingHeap(arr,k, Comparator.comparingInt(a -> a)));
+        System.out.println(quickSelect(arr,0, n-1,n-k));
 
     }
 
