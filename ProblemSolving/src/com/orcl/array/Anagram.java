@@ -1,34 +1,29 @@
 package com.orcl.array;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Anagram {
     public static void main(String[] args) {
-        System.out.println(isAnagram("a","ab"));
-        System.out.println(isAnagram("aa","bb"));
-        System.out.println(isAnagram("anagram","nagaram"));
+        System.out.println(isAnaGram("a","ab"));
+        System.out.println(isAnaGram("aa","bb"));
+        System.out.println(isAnaGram("anagram","nagaram"));
     }
-    private static boolean isAnagram(String s, String t) {
-        boolean result = true;
+    private static boolean isAnaGram(String s, String t) {
+        if (s.length() != t.length()) return false;
+
         int[] count = new int[26];
-        if(s.length() != t.length()){
-            result = false;
-        } else {
-            for(int i=0; i<s.length();i++){
-                char source = s.charAt(i);
-                count[source - 'a'] += 1;
-            }
-            for(int i=0; i<t.length();i++){
-                char target = t.charAt(i);
-                count[target - 'a'] -= 1;
-            }
-            for(int i=0; i<26;i++){
-                if(count[i] > 0){
-                    result = false;
-                    break;
-                }
-            }
+
+        for (int i = 0; i < s.length(); i++) {
+            count[s.charAt(i) - 'a']++;
+            count[t.charAt(i) - 'a']--;
         }
 
-        return result;
+        for (int c : count) {
+            if (c != 0) return false;
+        }
 
+        return true;
     }
+
 }

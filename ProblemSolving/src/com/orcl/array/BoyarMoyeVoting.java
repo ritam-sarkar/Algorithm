@@ -8,7 +8,7 @@ public class BoyarMoyeVoting {
     public static void main(String[] args) {
         System.out.println(findMajority(new int[] {2,3,4,5,2,2,1,2,2}));
         System.out.println(findMajority(new int[] {2,4,2,2,2,2,2,1,3}));
-        System.out.println(findMajority(new int[] {1,1,4,5,4,2,4}));
+        System.out.println(findMajority(new int[] {1,1,4,5,4,2,4})); // total 7 elements but no of 4 is 3
     }
 
     /**

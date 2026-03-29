@@ -5,101 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bbeba34-2332-43b3-8a62-0a652ebf6636" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DynamicProgramming/src/array/leetcode/CombinationSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProblemSolving/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProblemSolving/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProblemSolving/problems_GS.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProblemSolving/src/com/riversand/AddTwoNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProblemSolving/src/com/riversand/ContainerWithMostWater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProblemSolving/src/com/riversand/KthSmallestNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProblemSolving/src/com/riversand/array/SecondSmallestElementOfUnsortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProblemSolving/src/com/riversand/array/SecondSmallestOfRotatedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProblemSolving/src/com/jazx/CheckSumFileBytes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProblemSolving/src/com/jazx/DisjoinSetFunctionProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProblemSolving/src/com/jazx/MacronProblem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DynamicProgramming/DynamicProgramming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicProgramming/DynamicProgramming.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MTech/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MTech/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MTech/out/production/MTech/pilani/bits/LeaderInArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/MTech/out/production/MTech/pilani/bits/LeaderInArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MTech/out/production/MTech/pilani/bits/reccursion/BinaryReccursion.class" beforeDir="false" afterPath="$PROJECT_DIR$/MTech/out/production/MTech/pilani/bits/reccursion/BinaryReccursion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MTech/out/production/MTech/pilani/bits/reccursion/Factorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/MTech/out/production/MTech/pilani/bits/reccursion/Factorial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MTech/out/production/MTech/pilani/bits/reccursion/TowerOfHanoi.class" beforeDir="false" afterPath="$PROJECT_DIR$/MTech/out/production/MTech/pilani/bits/reccursion/TowerOfHanoi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MTech/out/production/MTech/pilani/bits/stack/QueueUsingSingleStack$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MTech/out/production/MTech/pilani/bits/stack/QueueUsingSingleStack$MyQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/MTech/out/production/MTech/pilani/bits/stack/QueueUsingSingleStack$MyQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MTech/out/production/MTech/pilani/bits/stack/QueueUsingSingleStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/MTech/out/production/MTech/pilani/bits/stack/QueueUsingSingleStack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MTech/out/production/MTech/pilani/bits/stack/StackReverese.class" beforeDir="false" afterPath="$PROJECT_DIR$/MTech/out/production/MTech/pilani/bits/stack/StackReverese.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/ContiguousSubArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/ContiguousSubArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/CountLengthOfCycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/CountLengthOfCycle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/DecimalRoman.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/DecimalRoman.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/DistBetweenTwoWords.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/DistBetweenTwoWords.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/FindMissingPositive.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/FindMissingPositive.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/IndianCurrency.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/IndianCurrency.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/LeftRightRotateOfString.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/LeftRightRotateOfString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/LeftRotationOfArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/LeftRotationOfArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/LongestCommonPrefix.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/LongestCommonPrefix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/MaximumSumAlternateNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/MaximumSumAlternateNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/MaximumSumOfKthlength.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/MaximumSumOfKthlength.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/MedianFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/MedianFinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/MinimumLengthOfContiguousSubArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/MinimumLengthOfContiguousSubArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/NonDevisibleSubset.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/NonDevisibleSubset.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/OpenTextQuestion.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/OpenTextQuestion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/SnowPack.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/SnowPack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/SpecialStringDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/SpecialStringDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/ZigzagSentence.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/ZigzagSentence.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/Zigzagarray.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/array/Zigzagarray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/bitwise/BinaryGap.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/bitwise/BinaryGap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/bitwise/BitwiseOperatorDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/bitwise/BitwiseOperatorDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/bitwise/RangeWisebitwiseand.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/bitwise/RangeWisebitwiseand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/bitwise/TwoSingleNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/bitwise/TwoSingleNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/hashing/AzugaProblem$Discount.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/hashing/AzugaProblem$Discount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/hashing/AzugaProblem.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/hashing/AzugaProblem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/hashing/DistinctIds.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/hashing/DistinctIds.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/hashing/DnaSequenceProblem.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/hashing/DnaSequenceProblem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/hashing/FindPairOfSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/hashing/FindPairOfSum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/hashing/FirstNonRepeatingCharacter.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/hashing/FirstNonRepeatingCharacter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/hashing/KMostFrequentElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/hashing/KMostFrequentElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/pattern/DivideWithOutDivideOrModOrMultiply.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/pattern/DivideWithOutDivideOrModOrMultiply.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/pattern/PascalTriangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/pattern/PascalTriangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/ClimbindLeaderBorad.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/ClimbindLeaderBorad.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/ClosestThreeSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/ClosestThreeSum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/CountElementWithinGivenRange.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/CountElementWithinGivenRange.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/FindMinimumInRotatedAndSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/FindMinimumInRotatedAndSortedArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/FindMissingExtraArrayElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/FindMissingExtraArrayElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/FindSingleOccurance.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/FindSingleOccurance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/InflectionPointDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/InflectionPointDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/MaxSubArraySummation.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/MaxSubArraySummation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/MaximumSubArrayModuleM.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/MaximumSubArrayModuleM.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/MedianDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/MedianDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/MinumumTimeRequired.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/MinumumTimeRequired.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/SearchInInfiniteArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/SearchInInfiniteArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/SumOf4.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/SumOf4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/TripLetProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/TripLetProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/TripletDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/TripletDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/TripletOfThreeSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/TripletOfThreeSortedArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/TriplteSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/search/TriplteSum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/slidingWindow/LengthOfLongestSubString.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/slidingWindow/LengthOfLongestSubString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/sort/FindKthElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/sort/FindKthElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/sort/LexographicNextValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/sort/LexographicNextValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/sort/MinimumSwapForSortingArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/sort/MinimumSwapForSortingArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/sort/RemoveDuplicateFromSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/sort/RemoveDuplicateFromSortedArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/sort/SuprassCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/sort/SuprassCount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/stack/BalancedBraces.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/stack/BalancedBraces.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/stack/NextGreaterElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/stack/NextGreaterElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/stack/SuperReduceString.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/stack/SuperReduceString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/util/ArrayUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/util/ArrayUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/util/FileUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/util/FileUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/util/MatrixUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/util/MatrixUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/util/NumberUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/orcl/util/NumberUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/riversand/RomanToNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/riversand/RomanToNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/riversand/VariantGraphGenerator$Entity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/com/riversand/VariantGraphGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/test/oracle/EncryptionDEmo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/test/oracle/EncryptionDEmo1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/test/oracle/FindSqRt.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/test/oracle/FindSqRt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/test/oracle/MatrixTriangleMirror.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/test/oracle/MatrixTriangleMirror.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/test/oracle/TimesInWord.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/test/oracle/TimesInWord.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/test/oracle/TripleCombination.class" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/out/production/ProblemSolving/test/oracle/TripleCombination.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/src/com/orcl/array/LeftRightRotateOfString.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/src/com/orcl/array/LeftRightRotateOfString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/src/com/orcl/hashing/AzugaProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemSolving/src/com/orcl/hashing/AzugaProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemSolving/src/com/riversand/VariantGraphGenerator.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +37,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="1ilyyGPvOjRA8Pqc4x9tXtXZzIV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -136,8 +49,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/Workspace/Datastructure",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Workspace/Algorithm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0"
